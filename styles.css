@@ -1,0 +1,40 @@
+.loader{
+    font-size: 3rem;
+    font-family: sans-serif;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.loader span {
+    width: 10px;
+    height: 10px;
+    margin-top: 1.8rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.first-span{
+    animation-name: opacity-animate;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+.second-span{
+    animation-name: opacity-animate;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+.third-span{
+    offset: 1s;
+    animation-name: opacity-animate;
+    animation-duration: 3s;
+    animation-delay: 3s; 
+    animation-iteration-count: infinite;
+}
+@keyframes opacity-animate{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
